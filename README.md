@@ -5,14 +5,15 @@
 1. [Recap](#1-recap)
 2. [Learning Objectives](#2-learning-objectives)
 3. [Classical Machine Learning Overview](#3-classical-machine-learning-overview)
-    - [Supervised Learning](supervised-learning)
-    - [Unsupervised Learning](unsupervised-learning)
-4. [Training a Simple ML Model](#6-training-a-simple-ml-model)
-5. [Performance Metrics](#7-performance-metrics)
-6. [Cross-Validation](#8-cross-validation)
-7. [Evaluation](#9-evaluation)
-    - [Hyperparameter Tuning](hyperparameter-tuning)
-8. [Conclusion & Next Steps](#11-conclusion--next-steps)
+    - [Supervised Learning](#supervised-learning)
+    - [Unsupervised Learning](#unsupervised-learning)
+4. [Training a Simple ML Model](#4-training-a-simple-ml-model)
+5. [Performance Metrics](#5-performance-metrics)
+6. [Cross-Validation](#6-cross-validation)
+7. [Model Evaluation & Hyperparameter Tuning](#7-model-evaluation--hyperparameter-tuning)
+    - [Model Evaluation](#model-evaluation)
+    - [Hyperparameter Tuning](#hyperparameter-tuning)
+8. [Conclusion & Next Steps](#8-conclusion--next-steps)
 
 ## 1. Recap
 
@@ -57,7 +58,7 @@ In Classical Machine Learning, there are a few types of learning methods. The tw
 
 ---
 
-### 🧠 Supervised Learning 
+### Supervised Learning 
 
 Supervised learning uses **labeled data**, meaning each training example includes both input features and a correct output (label).
 
@@ -83,7 +84,7 @@ Supervised learning algorithms are divided into two categories based on the type
 - Random Forest Regressor  
 - k-Nearest Neighbors (k-NN) Regression
 
-### 🔍 Unsupervised Learning
+### Unsupervised Learning
 
 Unsupervised learning works with **unlabeled data**. The algorithm tries to find patterns, groupings, or structure in the data without knowing the correct output in advance.
 
@@ -122,7 +123,7 @@ All of these algorithms involve a lot of math and reasoning behind each one. Thi
 
 **Reinforcement Learning:** involves a model learning by interacting with an environment and receiving rewards or penalties. While it's less common in classical ML, it's widely used in areas like robotics, game-playing agents, and recommendation systems.
 
-## 6. Training a Simple ML Model
+## 4. Training a Simple ML Model
 
 Now comes the fun part—actually training a machine learning model!
 
@@ -158,7 +159,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 ```
-## 7. Performance Metrics
+## 5. Performance Metrics
 
 After training a model, we need a way to measure how well it performs. This is where **performance metrics** come in. The right metric depends on your problem type and what matters most in your specific use case.
 
@@ -204,7 +205,7 @@ Not all “good” results mean the same thing. A model might look great on the 
 
 The goal is to always pick the metric that matches the **real-world impact** of your predictions. A good model in one case might be a poor fit for another, depending on what errors matter most.
 
-## 8. Cross-Validation
+## 6. Cross-Validation
 
 In our earlier example, we used a common approach: splitting the dataset into two parts—one for training and one for testing. While this is simple and widely used, there's a problem. A single train-test split can be **unreliable**, especially with smaller datasets. The model’s performance might vary significantly depending on how the data is divided.
 
@@ -222,7 +223,7 @@ In the end, you average the results from each run to get a more stable and accur
 
 Cross-validation is especially important when you’re tuning hyperparameters or comparing different models. It ensures that the performance you're seeing isn't just a result of a "lucky" data split.
 
-## 9. Model Evaluation & Hyperparameter Tuning
+## 7. Model Evaluation & Hyperparameter Tuning
 
 Training a model is just the beginning. After that, the next steps are:
 
@@ -327,7 +328,9 @@ For now, just remember:
 
 ### How to Tune?
 
-We usually combine hyperparameter tuning with **Cross-Validation**, using tools like **Grid Search** or **Random Search**.
+We usually combine hyperparameter tuning with **Cross-Validation**, using tools like **Grid Search**.
+
+Grid Search is a method that automatically tests all possible combinations of hyperparameter values to find the best-performing model configuration.
 
 #### Grid Search Example:
 
@@ -342,3 +345,34 @@ grid.fit(X_train, y_train)
 print("Best Parameters:", grid.best_params_)
 print("Best Score:", grid.best_score_)
 ```
+
+## 8. Conclusion & Next Steps
+
+At this point, you've gone through the **entire machine learning process** from start to finish:
+
+- You explored and cleaned your data  
+- You transformed it to make it model-ready  
+- You chose the right algorithms  
+- You trained and evaluated multiple models  
+- You tuned them to improve performance  
+
+Now all that’s left is to **communicate your results** in a way that’s clear, insightful, and impactful. Whether it's through a dashboard, a report, or a simple slideshow presenting your findings effectively is the final step that brings your work to life and shows the value of everything you've done.
+
+
+#### What's Next:
+
+Now that you've completed the full modeling cycle—from preparing data to training, evaluating, and tuning models—you’ve built a solid foundation in classical machine learning.
+
+In the next presentation, we’ll take things further by diving deeper into several key topics we’ve touched on and explore new concepts.
+
+We’ll look at **advanced data cleaning techniques** for handling messy, real-world datasets, including smarter methods for dealing with outliers, missing values, and noisy data.
+
+You’ll also be introduced to **dimensionality reduction techniques**, such as **Principal Component Analysis (PCA)**, which help simplify complex datasets while preserving the most important information.
+
+Next, we’ll level up our visualizations by using tools that go beyond basic graphs—learning how to create **interactive, dynamic visualizations** that make your data insights more compelling and easier to share.
+
+We’ll also introduce **neural networks**, explaining how they mimic the brain to solve more complex problems and why they’ve become the foundation of modern artificial intelligence.
+
+Finally, we’ll cover **pipelines**, which help automate and organize the entire machine learning workflow. From data preparation to modeling and evaluation, making your work more efficient and scalable.
+
+
