@@ -88,25 +88,38 @@ Supervised learning algorithms are divided into two categories based on the type
 
 Unsupervised learning works with **unlabeled data**. The algorithm tries to find patterns, groupings, or structure in the data without knowing the correct output in advance.
 
+<kbd><img src="images/Supervised-and-unsupervised.png" style="border:1px solid grey; border-radius:10px;"></kbd>
+
 📌 **Goal:** Discover hidden structures or relationships within the data  
 📌 **Example:** Segmenting customers into different groups based on their purchasing behavior  
 📌 **How to Recognize?:** No "target" column, or the goal is to group, compress, or summarize data
 
 Unsupervised learning includes the following categories:
 
-#### 1) Clustering Algorithms (Group similar data points)
+#### 1) Clustering Algorithms 
+
+Clustering algorithms are used to automatically group data points into clusters based on similarity, without needing labeled data.
+
 - K-Means  
 - Hierarchical Clustering  
 - DBSCAN  
 - Mean Shift
 
-#### 2) Dimensionality Reduction Algorithms (Reduce feature space)
+#### 2) Dimensionality Reduction Algorithms 
+
+Dimensionality reduction techniques simplify datasets by reducing the number of input features while preserving important information and patterns.
+
 - Principal Component Analysis (PCA)  
 - t-SNE  
 - Autoencoders *(transitions into deep learning)*  
 - Factor Analysis
 
-#### 3) Association Rule Learning (Discover item associations)
+<kbd><img src="images/dimensionalityReduction.png" style="border:1px solid grey; border-radius:10px;"></kbd>
+
+#### 3) Association Rule Learning 
+
+Association rule learning finds relationships and patterns between variables in large datasets.
+
 - Apriori  
 - Eclat
 
