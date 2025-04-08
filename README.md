@@ -27,7 +27,7 @@ Last week, we explored:
     - Scaling numerical features and encoding categorical variables  
   - ✅ The importance of ethics, fairness, and human values in building responsible AI systems
 
-This week, we’ll move beyond data preparation and talk about into the the rest of remaining stages of the machine learning pipeline.
+This week, we’ll move beyond data preparation and talk about the rest of remaining stages of the machine learning pipeline.
 
 - How to choose and train a model  
 - How to evaluate model performance using the right metrics  
@@ -48,13 +48,13 @@ By the end, you’ll understand how to take a project from raw data all the way 
 
 ## 3. Classical Machine Learning Overview
 
-Classical Machine Learning refers to a group of foundational algorithms and techniques that were developed before the rise of deep learning and neural networks. These methods are still widely used today because they are fast, interpretable, and effective for solving many real-world problems.
+Classical Machine Learning refers to a group of foundational algorithms and techniques that were developed before rapid growth of deep learning and neural networks. These methods are still widely used today because they are fast, interpretable, and effective for solving many real-world problems.
 
 <kbd><img src="images/SupervisedvsUnsupervised.webp" style="border:1px solid grey; border-radius:10px;"></kbd>
 
 **Types of Learning in Classical Machine Learning:**
 
-In Classical Machine Learning, there are a few types of learning methods. The two most common are **Supervised Learning** and **Unsupervised Learning**, but others like **Semi-Supervised** and **Reinforcement Learning** also exist and play important roles in specific scenarios.
+In Classical Machine Learning, there are a few types of learning methods. The two most common are **Supervised Learning** and **Unsupervised Learning**, but others like **Semi-Supervised** and **Reinforcement Learning** also exist and play their own important roles in specific scenarios.
 
 ---
 
@@ -210,7 +210,7 @@ Not all “good” results mean the same thing. A model might look great on the 
   - **MAE (Mean Absolute Error)** = On average, how many dollars off are we?  
   - **MSE (Mean Squared Error)** = Same idea, but **larger mistakes are punished more** because the errors are squared  
   - **RMSE (Root Mean Squared Error)** = Like MSE, but puts the result back in the original units (like dollars)  
-  - **R² Score** = Tells us how well the model explains the data (closer to 1 is better)
+  - **R² Score** = Quantifies how well a regression model's predictions align with the actual data points (closer to 1 is better)
 
   📌 **If small errors are okay**, use MAE.  
   📌 **If big mistakes are really bad**, use MSE or RMSE to penalize them more.  
@@ -329,14 +329,14 @@ You can try different values like 3, 5, or 7 and compare their accuracy.
 The hardest part about hyperparameter tuning is understanding **which hyperparameters to tune and why**. This requires a deeper understanding of how each machine learning algorithm works internally and going into that would take too long for this presentation.
 
 Instead, I recommend starting simple:  
-Pick **one algorithm** you're using (like KNN or Decision Tree), and look it up online to see what it is and how it works, then search **Scikit-learn's documentation** to see what hyperparameters are available and what they control.
+Pick **one algorithm** you're using, and look it up online to see what it is and how it works, then search **Scikit-learn's documentation** to see what hyperparameters are available and what they control.
 
 Focus on understanding a **few key hyperparameters** that commonly affect the model’s behavior, and experiment by changing their values slightly. This helps you see how small adjustments can impact the model’s accuracy, overfitting, or underfitting.
 
 As you grow more comfortable, you'll begin to recognize which hyperparameters matter most for different types of problems.
 
 For now, just remember:
-- **Hyperparameters** are settings you define before training your model (like `max_depth` in a decision tree or `n_neighbors` in KNN).
+- **Hyperparameters** are settings you define before training your model (like`n_neighbors` in KNN).
 - They are different from **parameters**, which are learned by the model during training.
 
 ### How to Tune?
@@ -369,12 +369,12 @@ At this point, you've gone through the **entire machine learning process** from 
 - You trained and evaluated multiple models  
 - You tuned them to improve performance  
 
-Now all that’s left is to **communicate your results** in a way that’s clear, insightful, and impactful. Whether it's through a dashboard, a report, or a simple slideshow presenting your findings effectively is the final step that brings your work to life and shows the value of everything you've done.
+Now all that’s left is to **communicate your results** in a way that’s clear and impactful. Whether it's through a dashboard, a report, or a  slideshow. Presenting your findings effectively is the final step that shows the value of everything you've done.
 
 
 #### What's Next:
 
-Now that you've completed the full modeling cycle—from preparing data to training, evaluating, and tuning models—you’ve built a solid foundation in classical machine learning.
+Now that you've completed the full modeling cycle, from preparing data to training, evaluating, and tuning models. You’ve built a solid foundation in classical machine learning.
 
 In the next presentation, we’ll take things further by diving deeper into several key topics we’ve touched on and explore new concepts.
 
@@ -382,10 +382,8 @@ We’ll look at **advanced data cleaning techniques** for handling messy, real-w
 
 You’ll also be introduced to **dimensionality reduction techniques**, such as **Principal Component Analysis (PCA)**, which help simplify complex datasets while preserving the most important information.
 
-Next, we’ll level up our visualizations by using tools that go beyond basic graphs—learning how to create **interactive, dynamic visualizations** that make your data insights more compelling and easier to share.
-
 We’ll also introduce **neural networks**, explaining how they mimic the brain to solve more complex problems and why they’ve become the foundation of modern artificial intelligence.
 
-Finally, we’ll cover **pipelines**, which help automate and organize the entire machine learning workflow. From data preparation to modeling and evaluation, making your work more efficient and scalable.
+Finally, we’ll cover **pipelines**, which help automate and organize the entire machine learning workflow.
 
 
